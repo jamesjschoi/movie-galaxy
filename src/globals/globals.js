@@ -1,0 +1,3 @@
+export const API_KEY = '8e0e31d7d4c06214e47a2edcfaf247e6';
+export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZTBlMzFkN2Q0YzA2MjE0ZTQ3YTJlZGNmYWYyNDdlNiIsInN1YiI6IjYxZTVjNjQ5Y2EwZTE3MDBhMDgwZjc3OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WwpQlbszc0r6WltdTKWyCzaPiYsVfjGOlmtlpcF3Qqs';
+export const APP_FOLDER_NAME = 'movie-galaxy';
