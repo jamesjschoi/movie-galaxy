@@ -1,7 +1,12 @@
 function Footer() {
+    const getYear = () => {
+        const d = new Date();
+        return d.getFullYear();
+    }
+
     return(
-        <footer>
-            <p>&copy; 2022 James Choi</p>
+        <footer className="footer">
+            <p>&copy; {getYear()} James Choi</p>
         </footer>
     );
 }

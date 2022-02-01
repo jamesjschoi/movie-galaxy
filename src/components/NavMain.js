@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 function NavMain() {
+
     return (
         <nav className="nav-main">
             <ul>
@@ -11,12 +12,13 @@ function NavMain() {
                     <NavLink to ="/about">About</NavLink>
                 </li>
                 <li>
-                    <NavLink to ="/favourite">Favourite</NavLink>
+                    <NavLink to ="/favs">Favourite</NavLink>
                 </li>
                 <li>
                     <NavLink to ="/search">Search</NavLink>
                 </li>
             </ul>
+
         </nav>
     );
 }
