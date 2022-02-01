@@ -556,16 +556,6 @@ footer p {
     height: 50px;
 }
 
-@media (min-width:300px) {
-    .info-content {
-        width: 250px;
-        height: 250px;
-        
-    }
-    .thumb img {
-        width: 10px;
-    }
-}
 
 @media (max-width: 500px) {
     .info-content {
@@ -608,7 +598,7 @@ footer p {
     .info-content p {
         font-size: 0.8rem;
     }
-}
+} 
 
 /* hamburger */
 .bm-burger-button {
