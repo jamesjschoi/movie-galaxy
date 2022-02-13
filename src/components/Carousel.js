@@ -1,6 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 import noPoster from '../images/no-movie-poster.jpg';
 
 
@@ -21,25 +21,12 @@ const Carousel = ({movies}) => {
         </div>
     ));
 
-    const responsive = {
-        0 : {
-            items: 3,
-        },
-        512: {
-            items: 2,
-        },
-        1024: {
-            items: 1,
-        },
-    };
-
   return (
     <AliceCarousel 
         activeIndex={10}
         autoPlay
         autoPlayStrategy='none'
         autoPlayInterval={4000} 
-        responsive={responsive} 
         infinite
         animationType='fadeout' 
         disableDotsControls 

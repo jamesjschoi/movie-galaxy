@@ -1,0 +1,30 @@
+// Resets
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+a {
+    &:hover {
+        color: $hover;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: $textColor;
+}

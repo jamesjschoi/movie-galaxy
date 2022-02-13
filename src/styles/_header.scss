@@ -1,0 +1,45 @@
+// Header
+header {
+    background-color: $mainTheme;
+
+    h1 {
+        margin: em(2) 0 em(6);
+        text-align: center;
+        animation: animate 15s linear infinite;
+
+        @keyframes animate {
+            15%, 18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+                color: $textColor;
+                text-shadow: 0 0 10px $secondaryTheme,
+                0 0 20px $secondaryTheme,
+                0 0 40px $secondaryTheme,
+                0 0 80px $secondaryTheme,
+                0 0 160px $secondaryTheme,
+                0 0 400px $secondaryTheme;  
+            }
+        }
+
+    a:hover {
+        color: $textColor;
+    }
+    }
+
+    @include mq($tablet){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: em(12);
+        h1 {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    @include mq($desktopWide){
+        padding: em(20);
+        h1 {
+            font-size: em(48);
+        }
+    }
+
+}

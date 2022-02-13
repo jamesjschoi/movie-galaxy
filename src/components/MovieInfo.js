@@ -36,8 +36,9 @@ function MovieInfo({movie}) {
                 <div className="score">{movie.vote_average}/10</div>
                 <h3>OVERVIEW</h3>
                 <p>{movie.overview}</p>
-                
-                <button className="info-btn-two" disabled={favouritesDisabled} onClick={() => addFavourites(movie)}><AddFavourite /></button>
+                <div className="info-button">
+                    <button className="info-btn-two" disabled={favouritesDisabled} onClick={() => addFavourites(movie)}><AddFavourite /></button>
+                </div>
                                         
             </div>
         </div>

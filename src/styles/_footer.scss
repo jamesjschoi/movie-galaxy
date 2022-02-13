@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: em(20);
+    background-color: $mainTheme;
+    p {
+        color: $textColor;
+        font-family: 'Bebas Neue', cursive;
+        font-size: em(20);
+    }
+}
+

@@ -1,0 +1,25 @@
+// Type
+
+/*
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lustria', serif;
+*/
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+h1, h2, h3, nav a {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+

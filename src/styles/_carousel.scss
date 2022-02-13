@@ -1,0 +1,25 @@
+.carouselItem {
+    margin: 0 em(10);
+    border-top: em(5) solid $secondaryTheme;
+    border-top-left-radius: em(10);
+    border-top-right-radius: em(10);
+    border-left: em(2) solid $secondaryTheme;
+    border-right: em(2) solid $secondaryTheme;;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(to top, black, transparent);
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        border-radius: em(5);
+        box-shadow: 0 0 em(5) $mainTheme;
+        object-fit: cover;
+        width: 100%;
+    }
+
+}   

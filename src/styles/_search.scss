@@ -1,0 +1,33 @@
+.search-page {
+    h2,
+    p {
+        text-align: center;
+        color: $textColor;
+        padding-top: em(20);
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+
+        input {
+            width: 100%;
+            padding: em(10);
+            border-radius: em(5);
+            border: none;
+            font-size: 1.25rem;
+
+            @include mq($tablet) {
+                width: em(300);
+            }
+
+            @include mq($desktop) {
+                width: em(400);
+            }
+
+            @include mq($desktopWide) {
+                width: em(500);
+            }
+        }
+    }
+}

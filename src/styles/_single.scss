@@ -1,0 +1,153 @@
+// Single Movie Page
+
+.info-wrapper {
+    position: relative;
+    padding: 0 em(10); 
+    min-height: 100vh;
+
+    .info-wrapper-image {
+        width: 100%;
+
+        @include mq($desktop) {
+            min-height: 100%;
+            opacity: 0.2;
+        }
+    }
+
+    .info-content {
+        border: em(1) solid $secondaryTheme;
+        border-radius: em(5);
+        padding: em(10);
+
+        @include mq($desktop) {
+            display:flex;
+            flex-direction: row;
+            position: absolute;
+            top: 5%;
+            left: 20%;
+            width: em(550);
+            box-shadow: 0 0 em(5) $secondaryTheme;
+            border-radius: em(10);
+        }
+
+        @include mq($desktopWide) {
+            top: 20%;
+            left: 19.5%;
+            width: em(800);
+        }
+
+        @include mq(1400) {
+            left: 22%;
+        }
+
+        @include mq(1700) {
+            left: 27%;
+        }
+
+        @include mq(2000) {
+            width: em(1000);
+            left: 33.5%;
+            top: 30%;
+        }
+
+        .thumb {
+            @include mq($desktop) {
+                margin-right: em(30);
+            }
+
+            @include mq(2000) {
+                margin-bottom: em(30);
+                margin-right: em(100);
+            }
+
+            & img {
+                width: em(100);
+                position: absolute;
+                left: 10%;
+                top: 5%;
+                border-radius: em(5);
+                box-shadow: 0 0 em(5) em(5) black;
+        
+                @include mq($tablet) {
+                    width: em(150);
+                }
+        
+                @include mq($desktop) {
+                    min-width: em(200);
+                    border-radius: em(20);
+                    padding: em(10);
+                    position: relative;
+                    box-shadow: none;
+                }
+
+                @include mq(2000) {
+                    min-width: em(250);
+                }
+                
+            }
+        }
+    }
+    .info-text {
+
+        @include mq($desktop) {
+            padding-bottom: em(50);
+        }
+        h3 {
+            color: $textColor;
+            margin: 0;
+            padding-bottom: em(5);
+        }
+
+        .score {
+            color: $textColor;
+            padding-bottom: em(5);        
+        }
+        
+        .info-button {
+            display: flex;
+            justify-content: center;
+
+            .info-btn-two {
+                @include mq($desktop) {
+                    position: absolute;
+                    bottom: em(20);
+                    right: em(20);
+                    width: em(50);
+                    height: em(50);
+                }
+            }
+        }
+
+        .about-info-container {
+            
+            h2 {
+                color: $textColor;
+                font-family: 'Bebas Neue', cursive;
+                text-align: center;
+                font-size: em(50);
+
+                @include mq($desktop) {
+                    text-align: left;
+                    padding-top: em(8);
+                    margin: 0;
+                }
+            }
+            p {
+                text-align: center;
+
+                @include mq($desktop) {
+                    text-align: left;
+                }
+            }
+
+            .tagline {
+                font-style: italic;
+                text-align: center;
+
+                @include mq($desktop) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

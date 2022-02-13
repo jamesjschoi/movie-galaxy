@@ -22,7 +22,7 @@ function PageSearch() {
     
 
     return (
-        <section className="search-wrapper">
+        <section className="search-page">
             <h2>Search</h2>
             <div className="search-container">
                 <Search 

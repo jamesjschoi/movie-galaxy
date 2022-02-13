@@ -1,0 +1,34 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Lustria&display=swap');
+
+/*
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lustria', serif;
+*/
+
+// Alice Carousel NPM
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+// Utilities
+@import './functions';
+@import './variables';
+@import './mixins';
+
+// Resets
+@import 'reset';
+@import 'type';
+
+// Components
+@import 'body';
+@import 'wrapper';
+@import 'header';
+@import 'nav';
+@import 'carousel';
+@import 'movies';
+@import 'section';
+@import 'about';
+@import 'search';
+@import 'favourites';
+@import 'single';
+@import 'footer';

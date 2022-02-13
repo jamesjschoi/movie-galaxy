@@ -1,0 +1,74 @@
+// About Page 
+
+.about-wrapper {
+    padding: 0 em(10);
+
+    @include mq($tablet) {
+        margin: em(10);
+        border: em(1) solid $secondaryTheme;
+    }
+
+    @include mq($desktop) {
+        padding-top: em(30);
+        margin-top: em(50);
+    }
+    
+    .about-container {
+        h2 {
+            color: $textColor;
+            text-align: center;
+            padding-top: em(20);
+        }
+    }
+    
+    .about-info {
+        @include mq($desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .info-left-box {
+            p {
+                padding-top: em(20);
+                text-align: center;
+                line-height: em(30);
+
+                @include mq($desktop) {
+                    text-align: left;
+                    padding-right: em(20);
+                }
+    
+                span {
+                    color: $secondaryTheme;
+                }
+            }
+        }
+        
+        .info-right {
+            p {
+                text-align: center;
+                line-height: em(25);
+
+                @include mq($desktop) {
+                    text-align: left;
+                    line-height: em(30);
+                    padding-top: em(20);
+                    padding-left: em(20)
+                }
+            }
+    
+            .tmdb-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: em(200);
+                .tmdb-img {
+                    width: em(100);
+                    height: em(100);
+                }
+            }
+        }
+    }
+
+}
+
