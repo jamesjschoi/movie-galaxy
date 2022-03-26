@@ -12,7 +12,6 @@ function PageHome( {sort} ) {
         const res = await fetch(`https://api.themoviedb.org/3/movie/${sort}?api_key=${API_KEY}&language=en-US&page=1`);
         let moviesDataFromAPI = await res.json();
         moviesDataFromAPI = moviesDataFromAPI.results.splice(0, 20);
-        console.log(moviesDataFromAPI);
         setMoviesData(moviesDataFromAPI);
     }
     useEffect(() => {
